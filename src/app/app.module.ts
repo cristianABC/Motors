@@ -9,7 +9,6 @@ import { ListPage } from '../pages/list/list';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
-import {AgmCoreModule} from 'angular2-google-maps/core';
 import {Geolocation} from '@ionic-native/geolocation';
 
 @NgModule({
@@ -20,10 +19,7 @@ import {Geolocation} from '@ionic-native/geolocation';
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp),
-    AgmCoreModule.forRoot({
-      apiKey: 'AIzaSyCZ_BQ-xk1aQpIIhnMXMchzuYemiBwTFFk'
-    })
+    IonicModule.forRoot(MyApp)
   ],
   bootstrap: [IonicApp],
   entryComponents: [
